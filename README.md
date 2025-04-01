@@ -1,2 +1,2 @@
 # Beta-for-Pinterest-based-creative-visual-exploration
-Mini Pinterest es un proyecto desarrollado en Java para la materia de Programación Orientada a Objetos. Su objetivo es permitir a los usuarios explorar, subir y guardar imágenes en colecciones. Este repositorio contiene el código fuente y los archivos necesarios para el desarrollo y mejora del proyecto.
+Mini Pinterest is a project developed in Java for the Object Oriented Programming subject. Its goal is to allow users to browse, upload and save images in collections. This repository contains the source code and files necessary for the development and improvement of the project.
