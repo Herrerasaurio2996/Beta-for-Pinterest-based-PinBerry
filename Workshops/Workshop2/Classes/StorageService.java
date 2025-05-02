@@ -3,11 +3,21 @@ package Workshops.Workshop2.Classes;
 import java.util.ArrayList;
 
 public class StorageService {
+    // List to store Photo objects
     private ArrayList<Photo> storedPhotos;
 
+        // Constructor: initializes the list
     public StorageService() {
         this.storedPhotos = new ArrayList<>();
     }
+
+    /**
+     * Attempts to save a photo to the storage.
+     * Conditions:
+     * - The photo must not be null
+     * - The photo must be active (not deleted)
+     * - It must not already be stored
+     */
 
     // Save a new photo if it’s valid and not already stored
     public boolean savePhoto(Photo photo) {

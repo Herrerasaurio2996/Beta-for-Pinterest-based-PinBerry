@@ -3,14 +3,25 @@ package Workshops.Workshop2.Classes;
 import java.util.ArrayList;
 
 public class Folder {
+
+     // Folder name
     private String name;
+
+    // List of photos inside the folder
     private ArrayList<Photo> photos;
 
+    // Constructor: initializes the folder with a name and empty photo list
     public Folder(String name) {
         this.name = name;
         this.photos = new ArrayList<>();
     }
 
+    /**
+     * Static factory method to create a Folder.
+     * It checks that the folder name is valid (not null or empty).
+     * @param folderName the name for the folder
+     * @return a new Folder object or null if the name is invalid
+     */
     public static Folder create(String folderName) {
         if (folderName != null && !folderName.isEmpty()) {
             System.out.println("Carpeta '" + folderName + "' creada.");
@@ -21,6 +32,11 @@ public class Folder {
         }
     }
 
+     /**
+     * Adds a photo to the folder if it is not null and is active (not deleted).
+     * @param photo the Photo object to add
+     * @return true if the photo was added successfully
+     */
     public boolean addPhoto(Photo photo) {
         if (photo != null && photo.isActive()) {
             photos.add(photo);
@@ -31,6 +47,11 @@ public class Folder {
         return false;
     }
 
+    /**
+     * Removes a photo from the folder if it exists.
+     * @param photo the Photo object to remove
+     * @return true if the photo was found and removed
+     */
     public boolean removePhoto(Photo photo) {
         if (photos.contains(photo)) {
             photos.remove(photo);
@@ -42,6 +63,10 @@ public class Folder {
         }
     }
 
+    /**
+     * Lists all the photos currently in the folder.
+     * Shows the image reference of each photo.
+     */
     public void listPhotos() {
         System.out.println("Photos in the folder'" + name + "':");
         if (photos.isEmpty()) {
@@ -53,6 +78,11 @@ public class Folder {
         }
     }
 
+     /**
+     * Changes the name of the folder to a new one if it is valid.
+     * @param newName the new folder name
+     * @return true if the renaming was successful
+     */
     public boolean renameFolder(String newName) {
         if (newName != null && !newName.isEmpty()) {
             this.name = newName;
@@ -64,6 +94,7 @@ public class Folder {
         }
     }
 
+     // Getter for the folder name
     public String getName() {
         return name;
     }
