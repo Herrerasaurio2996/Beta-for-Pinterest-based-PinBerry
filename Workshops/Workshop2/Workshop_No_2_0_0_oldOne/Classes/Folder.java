@@ -1,4 +1,4 @@
-package Workshops.Workshop2.Classes;
+package Workshops.Workshop2.Workshop_No_2_0_0_oldOne.Classes;
 
 import java.util.ArrayList;
 

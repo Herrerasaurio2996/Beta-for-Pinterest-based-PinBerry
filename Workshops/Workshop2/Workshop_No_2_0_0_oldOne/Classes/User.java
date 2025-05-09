@@ -1,5 +1,4 @@
-package Workshops.Workshop2.Classes;
-
+package Workshops.Workshop2.Workshop_No_2_0_0_oldOne.Classes;
 public class User {
 
     // Public attribute for the user's profile picture (not recommended to be public)
