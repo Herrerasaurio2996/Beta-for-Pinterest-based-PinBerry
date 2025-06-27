@@ -1,6 +1,6 @@
 import Photo;
 import Video;
-Import Gif;
+import Gif;
 
 
 
@@ -24,6 +24,30 @@ public class App {
         String date = scanner.nextLine();
 
         return new Photo(name, route, size, date);
+
+        public static Video createVideo(Scanner scanner) throws Exception {
+        System.out.print("Enter photo name: ");
+        String name = scanner.nextLine();
+        System.out.print("Enter photo route: ");
+        String route = scanner.nextLine();
+        System.out.print("Enter photo size: ");
+        Integer size = Integer.parseInt(scanner.nextLine());
+        System.out.print("Enter photo date: ");
+        String date = scanner.nextLine();
+
+        return new Video(name, route, size, date);
+
+        public static Gif createGif(Scanner scanner) throws Exception {
+        System.out.print("Enter photo name: ");
+        String name = scanner.nextLine();
+        System.out.print("Enter photo route: ");
+        String route = scanner.nextLine();
+        System.out.print("Enter photo size: ");
+        Integer size = Integer.parseInt(scanner.nextLine());
+        System.out.print("Enter photo date: ");
+        String date = scanner.nextLine();
+
+        return new Gif(name, route, size, date);
     }
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
