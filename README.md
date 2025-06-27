@@ -37,7 +37,7 @@ This contains:
 
 ## 👥Authors
 * **Juan Sebastian Herrera Rodriguez** - 20242020032.
-* **Isabella Chica Becerra** - 20242020032.
+* **Isabella Chica Becerra** - 20242020035.
 
 ---
 
